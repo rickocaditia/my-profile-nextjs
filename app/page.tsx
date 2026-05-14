@@ -18,13 +18,15 @@ export default function Portfolio() {
   };
 
   const itemVariants = {
-    hidden: { y: 30, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: { duration: 0.6, ease: "easeOut" }
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      duration: 0.5 // Hapus baris 'ease' jika menyebabkan error, atau pastikan nilainya benar
     }
-  };
+  }
+};
 
   return (
     <div className="min-h-screen bg-[#fafafa] text-slate-900 selection:bg-blue-100 overflow-x-hidden">
